@@ -7,26 +7,28 @@ class GameBox extends Component{
   constructor(props){
     super(props);
     this.state={
-      data: [{
-        id:0,
-        clicked:false},
-        {id:1,
-        clicked:false},
-        {id:2,
-        clicked:false},
-        {id:3,
-        clicked:false}
-      ]
+      data: this.populateData()
     };
 
   }
 
+populateData(){
+  const newData = []
+  for (var i = 0; i < 100; i++) {
+    const dataSet = {
+      id:i,
+      clicked:false
+    }
+    newData.push(dataSet)
+  }
+  return newData;
+}
 
 
   render(){
     return(
       <div>
-        <h2>BattlesShips</h2>
+        <h2>BattleShips</h2>
         <GameGrid data={this.state.data}/>
       </div>
     )
