@@ -12,3 +12,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.game-grid {
+  display: flex;
+  max-width: 120px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.grid-square {
+  width: 50px;
+  height: 50px;
+  border:2px solid black;
+
+}

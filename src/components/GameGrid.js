@@ -11,7 +11,9 @@ const GameGrid = ({data}) => {
 
 
 return(
-  <div>{dataNodes}</div>
+  <div className='game-grid'>
+    {dataNodes}
+  </div>
 )
 
 }

@@ -3,7 +3,9 @@ import React, {Component} from "react";
 const GridSquare = (props) => {
 
   return(
-    <div>You sunk my battleship</div>
+    <div className='grid-square'>
+      {props.id}
+    </div>
   )
 }
 
