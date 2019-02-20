@@ -5,7 +5,6 @@ import GameBox from '../containers/GameBox';
 const GridSquare = (props) => {
 
 function handleClick(){
-  console.log('vdbf', props.id);
   // return (props.id)
   hitCheck(props.id)
 }
