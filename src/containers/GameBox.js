@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import GameGrid from "../components/GameGrid";
+import GridSquare from '../components/GridSquare';
 
 class GameBox extends Component{
 
@@ -19,6 +20,8 @@ class GameBox extends Component{
     };
 
   }
+
+
 
   render(){
     return(

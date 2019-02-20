@@ -6,6 +6,9 @@ const GameGrid = ({data}) => {
   const dataNodes = data.map( datum => {
     return(
     <GridSquare id={datum.id} clicked={datum.clicked}/>
+    // this.addEventListener('onClick', (event) => {
+    //   console.log('pressed', data.id);
+    // })
   )
   })
 
